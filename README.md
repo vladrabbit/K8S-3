@@ -82,6 +82,8 @@ spec:
 
 ```
 
+![SCR1](https://github.com/vladrabbit/K8S-3/blob/main/SCR/1.1.png)
+
 2. Создать Service, который обеспечит доступ внутри кластера до контейнеров приложения из п.1 по порту 9001 — nginx 80, по 9002 — multitool 8080.
 
 ```yaml
@@ -105,6 +107,8 @@ spec:
 
 ```
 
+![SCR2](https://github.com/vladrabbit/K8S-3/blob/main/SCR/1.2.png)
+
 3. Создать отдельный Pod с приложением multitool и убедиться с помощью `curl`, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.
 
 ```yaml
@@ -120,6 +124,10 @@ spec:
   restartPolicy: Never
 
 ```
+
+![SCR3](https://github.com/vladrabbit/K8S-3/blob/main/SCR/1.3.png)
+
+![SCR4](https://github.com/vladrabbit/K8S-3/blob/main/SCR/1.4.png)
 
 
 ### Решение 2
@@ -150,5 +158,12 @@ spec:
 
 ```
 
+![SCR5](https://github.com/vladrabbit/K8S-3/blob/main/SCR/2.1.png)
+
 2. Продемонстрировать доступ с помощью браузера или `curl` с локального компьютера.
+
+![SCR6](https://github.com/vladrabbit/K8S-3/blob/main/SCR/2.3.png)
+![SCR7](https://github.com/vladrabbit/K8S-3/blob/main/SCR/2.2.png)
+
+
 
