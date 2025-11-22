@@ -304,11 +304,3 @@ spec:
    ```
  или через браузер.
 
-### **Что сдать на проверку**
-- Манифесты:
-  - `deployment-frontend.yaml`
-  - `deployment-backend.yaml`
-  - `service-frontend.yaml`
-  - `service-backend.yaml`
-  - `ingress.yaml`
-- Скриншоты проверки доступа (`curl` или браузер).
