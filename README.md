@@ -141,6 +141,9 @@ spec:
  curl <service-name>:9001 # Проверить nginx
  curl <service-name>:9002 # Проверить multitool
 ```
+![scr1](https://github.com/vladrabbit/K8S-3/blob/main/scr/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-11-21%20%D0%B2%2010.28.28.png)
+![scr2](https://github.com/vladrabbit/K8S-3/blob/main/scr/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-11-21%20%D0%B2%2010.29.25.png)
+
 4. **Создать Service типа NodePort** для доступа к `nginx` снаружи.
 
 ```yaml
@@ -166,7 +169,10 @@ spec:
 ```bash
  curl <node-ip>:<node-port>
    ```
- или через браузер.
+
+![scr3](https://github.com/vladrabbit/K8S-3/blob/main/scr/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-11-21%20%D0%B2%2010.31.01.png)
+
+
 
  ---
 
@@ -265,6 +271,7 @@ spec:
  microk8s enable ingress
    ```
 
+
 4. **Создать Ingress**, который:
 
 ```yaml
@@ -302,5 +309,8 @@ spec:
  curl <host>/
  curl <host>/api
    ```
- или через браузер.
+
+![scr4](https://github.com/vladrabbit/K8S-3/blob/main/scr/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-11-22%20%D0%B2%2017.49.17.png)
+![scr5](https://github.com/vladrabbit/K8S-3/blob/main/scr/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-11-22%20%D0%B2%2017.50.12.png)
+
 
